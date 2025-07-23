@@ -11,15 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from boot device
-$(call inherit-product, device/generic/boot/device.mk)
+$(call inherit-product, device/xioami/boot/device.mk)
 
 PRODUCT_DEVICE := rodin
 PRODUCT_NAME := omni_rodin
-PRODUCT_BRAND := generic
-PRODUCT_MODEL := Generic Device
-PRODUCT_MANUFACTURER := generic
+PRODUCT_BRAND := xiaomi
+PRODUCT_MODEL := xiaomi Device
+PRODUCT_MANUFACTURER := xioami
 
-PRODUCT_GMS_CLIENTID_BASE := android-generic
+PRODUCT_GMS_CLIENTID_BASE := android-xioami
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC=""
